@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formação Acadêmica - {{ dados['nome'] }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Início</a></li>
+        <li><a href="/sobre" class="ativo">Formações</a></li>
+        <li><a href="/projetos">Projetos</a></li>
+        <li><a href="/contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="educacao">
+    <h1>🎓 Minhas Formações Acadêmicas</h1>
+    <p class="intro">Aqui estão alguns dos cursos e formações que fazem parte da minha trajetória profissional e pessoal.</p>
+
+    <div class="cards">
+      {% for item in dados['educacao'] %}
+      <div class="card">
+        <h3>{{ item['curso'] }}</h3>
+        <p><strong>{{ item['ano'] }}</strong></p>
+        <p>{{ item['instituicao'] }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+
+  <br>
+    <br>
+      <br>
+        <br>
+          <br>
+            <br>
+              <br>
+                <br>
+                  <br>
+                    <br>
+                      <br>
+                        <br>
+                          <br>
+
+  <footer>
+    <p>&copy; {{ dados['nome'] }} — Todos os direitos reservados 💫</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos - {{ dados['nome'] }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Início</a></li>
+        <li><a href="/sobre">Sobre</a></li>
+        <li><a href="/projetos">Projetos</a></li>
+        <li><a href="/contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h1>Meus Projetos</h1>
+    <div class="projetos">
+      <!-- Projeto 1 -->
+      <div class="projeto">
+        <img src="{{ url_for('static', filename='dream buider.png') }}" alt="Busca em Largura (BFS)">
+        <h2>Dream Buider</h2>
+        <p>Transformando ideias em realidade, passo a passo. Aqui, cada projeto é uma oportunidade de criar, aprender e construir algo que faça sentido..</p>
+      </div>
+
+      <!-- Projeto 2 -->
+      <div class="projeto">
+        <img src="{{ url_for('static', filename='cenario.png') }}" alt="Cenário 3D de Piquenique">
+        <h2>Cenário 3D de Piquenique</h2>
+        <p>Nessa atividade, o professor pediu pra gente criar um cenario com varios elementos, e saiu assim o meu cenario.</p>
+      </div>
+
+      <!-- Projeto 3 -->
+      <div class="projeto">
+        <img src="{{ url_for('static', filename='login.png') }}" alt="Tela de Login">
+        <h2>Tela de Login Estilizada</h2>
+        <p>Um sistema de login permite que usuários acessem uma área protegida de um site ou app, inserindo um nome de usuário (ou email) e uma senha. A ideia é identificar e autenticar o usuário para liberar acesso a conteúdos ou funcionalidades exclusivas..</p>
+      </div>
+
+      <!-- Projeto 4 -->
+      <div class="projeto">
+        <img src="{{ url_for('static', filename='sinuca.png') }}" alt="Jogo de Sinuca 3D">
+        <h2>Jogo de Sinuca 3D</h2>
+        <p>Nessa atividade o professos pediu pra criar um jogo em grupo no unity, então resolvemos fazer uma sinuca. Deu um pouco de trabalho mais no final deu certo..</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - {{ dados['nome'] }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Início</a></li>
+        <li><a href="/sobre">Sobre</a></li>
+        <li><a href="/projetos">Projetos</a></li>
+        <li><a href="/contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h1>Entre em Contato</h1>
+    <form>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea placeholder="Sua mensagem..." required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+  <br>
+    <br>
+      <br>
+        <br>
+          <br>
+            <br>
+           
+                  
+  <footer>
+    <p>&copy; {{ dados['nome'] }} </p>
+    <p>Entre em contato:</p>
+    <ul>
+      <li><strong>Telefone:</strong> <a href="tel:+55(27)992652281">+55 (27) 992652281</a></li>
+      <li><strong>Email:</strong> <a href="juliaemanuellydasilvacosta@gmail.com">juliaemanuellydasilvacosta@gmail.com</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/JuliaEmanuelly07" target="_blank">github.com/juliaemanuelly</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
