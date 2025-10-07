@@ -16,7 +16,7 @@ Gosto de criar, testar ideias e ver as coisas acontecerem na prática. Cada proj
     ],
     "projetos": [
         {"titulo": "Sistema de Login", "descricao": "Um sistema de login para autenticação de usuários.", "imagem": "login.jpg"},
-        {"titulo": "Implementação BFS", "descricao": "Algoritmo de busca em largura (BFS).", "imagem": "bfs.jpg"},
+        {"titulo": "DreamBuider", "descricao": "Um sistema de realização de sonhos.", "imagem": "DreamBuider.png"},
         {"titulo": "Cenário", "descricao": "Atividade de criação de cenário com elementos gráficos variados.", "imagem": "cenario.jpg"},
         {"titulo": "Jogo de Sinuca", "descricao": "Jogo de sinuca desenvolvido no Unity.", "imagem": "sinuca.jpg"}
     ]
@@ -40,3 +40,4 @@ def contato():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
